@@ -358,7 +358,7 @@ pre {
     background: #F0FFEB;
     padding: 7px 10px;
     margin: 15px 0;
-    border: 1px solid #C7ECB8;
+    border: 1px solid #eeeeee;
     border-radius: 2px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;

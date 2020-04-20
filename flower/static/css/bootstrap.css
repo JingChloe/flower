@@ -693,7 +693,7 @@ table {
   border-top: 0;
 }
 .table tbody + tbody {
-  border-top: 2px solid #c7ecb8;
+  border-top: 2px solid #eeeeee;
 }
 .table-condensed th,
 .table-condensed td {
