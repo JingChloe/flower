@@ -676,7 +676,7 @@ table {
   line-height: 18px;
   text-align: left;
   vertical-align: top;
-  border-top: 1px solid #c7ecb8;
+  border-top: 1px solid #eeeeee;
 }
 .table th {
   font-weight: bold;
@@ -700,7 +700,7 @@ table {
   padding: 4px 5px;
 }
 .table-bordered {
-  border: 1px solid #c7ecb8;
+  border: 1px solid lightslategray;
   border-collapse: separate;
   *border-collapse: collapsed;
   border-left: 0;
@@ -710,7 +710,7 @@ table {
 }
 .table-bordered th,
 .table-bordered td {
-  border-left: 1px solid #c7ecb8;
+  border-left: 1px solid #eeeeee;
 }
 .table-bordered caption + thead tr:first-child th,
 .table-bordered caption + tbody tr:first-child th,
@@ -2813,12 +2813,12 @@ input[type="submit"].btn.btn-mini {
   padding-left: 20px;
   padding-right: 20px;
   background-color: #233F7D;
-  background-image: -moz-linear-gradient(right, #260c55, #0077aa);
-  background-image: -ms-linear-gradient(right, #260c55, #0077aa);
+  background-image: -moz-linear-gradient(left, #260c55, #0077aa);
+  background-image: -ms-linear-gradient(left, #260c55, #0077aa);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#260c55), to(#0077aa));
-  background-image: -webkit-linear-gradient(right, #260c55, #0077aa);
-  background-image: -o-linear-gradient(right, #260c55, #0077aa);
-  background-image: linear-gradient(right, #260c55, #0077aa);
+  background-image: -webkit-linear-gradient(left, #260c55, #0077aa);
+  background-image: -o-linear-gradient(left, #260c55, #0077aa);
+  background-image: linear-gradient(left, #260c55, #0077aa);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5b8933', endColorstr='#bad279', GradientType=0);
   -webkit-border-radius: 4px;
@@ -3016,7 +3016,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav .active > a:hover {
   color: #ffffff;
   text-decoration: none;
-  background-color: #bad279;
+  background-color: rgba(250, 250, 250, 0.3);
 }
 .navbar .divider-vertical {
   height: 40px;
@@ -3037,12 +3037,12 @@ input[type="submit"].btn.btn-mini {
   margin-left: 5px;
   margin-right: 5px;
  background-color: #0e90d2;
-  background-image: -moz-linear-gradient(top, #149bdf, #0480be);
-  background-image: -ms-linear-gradient(top, #149bdf, #0480be);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#149bdf), to(#0480be));
-  background-image: -webkit-linear-gradient(top, #149bdf, #0480be);
-  background-image: -o-linear-gradient(top, #149bdf, #0480be);
-  background-image: linear-gradient(top, #149bdf, #0480be);
+  background-image: -moz-linear-gradient(left, #260c55, #0077aa);
+  background-image: -ms-linear-gradient(left, #260c55, #0077aa);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#260c55), to(#0077aa));
+  background-image: -webkit-linear-gradient(left, #260c55, #0077aa);
+  background-image: -o-linear-gradient(left, #260c55, #0077aa);
+  background-image: linear-gradient(left, #260c55, #0077aa);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5b8933', endColorstr='#bad279', GradientType=0);
   border-color: #bad279 #bad279 #9cbf40;
@@ -3452,12 +3452,12 @@ a.thumbnail:hover {
   text-align: center;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #0e90d2;
-  background-image: -moz-linear-gradient(top, #149bdf, #0480be);
-  background-image: -ms-linear-gradient(top, #149bdf, #0480be);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#149bdf), to(#0480be));
-  background-image: -webkit-linear-gradient(top, #149bdf, #0480be);
-  background-image: -o-linear-gradient(top, #149bdf, #0480be);
-  background-image: linear-gradient(top, #149bdf, #0480be);
+  background-image: -moz-linear-gradient(left, #260c55, #0077aa);
+  background-image: -ms-linear-gradient(left, #260c55, #0077aa);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#260c55), to(#0077aa));
+  background-image: -webkit-linear-gradient(left, #260c55, #0077aa);
+  background-image: -o-linear-gradient(left, #260c55, #0077aa);
+  background-image: linear-gradient(left, #260c55, #0077aa);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#149bdf', endColorstr='#0480be', GradientType=0);
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
