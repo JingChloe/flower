@@ -108,7 +108,7 @@
               {% if worker['stats'].get('autoscaler', None) %}
                 <div class="row-fluid">
                     <div class="span6">
-                        <table class="table table-bordered table-striped">
+                        <table class="table table-bordered">
                             <caption>Autoscaler options</caption>
                             <tbody>
                             {% for name,value in worker['stats']['autoscaler'].items() %}
@@ -127,7 +127,7 @@
 
             <div class="tab-pane" id="tab-broker">
               <div class="span6">
-                <table class="table table-bordered table-striped">
+                <table class="table table-bordered">
                   <caption>Broker options</caption>
                   <tbody>
                     {% for name,value in (worker['stats'].get('consumer', None) or worker['stats'])['broker'].items() %}
@@ -153,7 +153,7 @@
                 </div>
               </div>
 
-              <table class="table table-bordered table-striped">
+              <table class="table table-bordered">
                 <thead>
                   <tr>
                     <th>Name</th>
@@ -191,7 +191,7 @@
 
             <div class="tab-pane" id="tab-tasks">
               <h2>Processed <small>number of completed tasks</small></h2>
-              <table class="table table-bordered table-striped">
+              <table class="table table-bordered">
                 <tbody>
                   {% for name,value in worker['stats']['total'].items() %}
                     <tr>
@@ -203,7 +203,7 @@
               </table>
 
               <h2>Active  <small>currently executing tasks</small></h2>
-              <table class="table table-bordered table-striped">
+              <table class="table table-bordered">
                 <thead>
                   <tr>
                     <th>Name</th>
@@ -229,7 +229,7 @@
               </table>
 
               <h2>Scheduled <small>scheduled (eta/countdown/retry) tasks</small></h2>
-              <table class="table table-bordered table-striped">
+              <table class="table table-bordered">
                 <thead>
                   <tr>
                     <th>Name</th>
@@ -251,7 +251,7 @@
               </table>
 
               <h2>Reserved  <small>tasks that have been received, but are still waiting to be executed</small></h2>
-              <table class="table table-bordered table-striped">
+              <table class="table table-bordered">
                 <thead>
                   <tr>
                     <th>Name</th>
@@ -273,7 +273,7 @@
               </table>
 
               <h2>Revoked  <small>cancelled tasks</small></h2>
-              <table class="table table-bordered table-striped">
+              <table class="table table-bordered">
                 <thead>
                   <tr>
                     <th>UUID</th>
@@ -291,7 +291,7 @@
 
             <div class="tab-pane" id="tab-limits">
               <h3>Task limits</h3>
-              <table class="table table-bordered table-striped">
+              <table class="table table-bordered">
                 <thead>
                   <tr>
                     <th>Task name</th>
@@ -330,7 +330,7 @@
 
           <div class="tab-pane" id="tab-config">
             <div class="span8">
-              <table class="table table-bordered table-striped">
+              <table class="table table-bordered">
                 <caption>Configuration options</caption>
                 <tbody>
                 {% for name,value in sorted(worker.get('conf', {}).items()) %}
@@ -348,7 +348,7 @@
 
           <div class="tab-pane" id="tab-system">
             <div class="span8">
-              <table class="table table-bordered table-striped">
+              <table class="table table-bordered">
                 <caption>System usage statistics</caption>
                 <tbody>
                 {% if isinstance(worker['stats'].get('rusage', None), dict) %}
