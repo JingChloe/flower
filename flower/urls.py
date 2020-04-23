@@ -20,7 +20,7 @@ from .utils import gen_cookie_secret
 
 settings = dict(
     template_path=os.path.join(os.path.dirname(__file__), "templates"),
-    static_path=os.path.join(os.path.dirname(__file__), "static"),
+    static_path=os.path.join(os.path.dirname(__file__), "async-task-flower/static"),
     cookie_secret=gen_cookie_secret(),
     static_url_prefix='/static/',
     login_url='/login',
