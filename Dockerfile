@@ -14,7 +14,4 @@ ENV PYTHONUNBUFFERED=1 PYTHONHASHSEED=random PYTHONDONTWRITEBYTECODE=1
 # Default port
 EXPOSE 5555
 
-# Run as a non-root user by default, run as user with least privileges.
-USER nobody
-
 ENTRYPOINT ["flower"]
