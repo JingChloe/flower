@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block navbar %}
-  {% module Template("navbar.html", active_tab="dashboard")%}
+  {% module Template("navbar.html", active_tab="dashboard") %}
 {% end %}
 
 {% block container %}
@@ -17,7 +17,12 @@
     <div class="panel panel-default">
         <div class="panel-body">
 
-    <table id="workers-table" class="table table-bordered table-striped">
+    <div class="btn-toolbar">
+      <div class="btn-group">
+        <a class="btn" href="./?refresh=True">Refresh</a>
+      </div>
+    </div>
+    <table id="workers-table" class="table table-bordered">
       <thead>
         <tr>
             <th>Worker Name</th>
@@ -49,10 +54,4 @@
         </div>
     </div>
 
-{% end %}
-
-{% block extra_scripts %}
-<script type="text/javascript">
-  var autorefresh = {{ autorefresh }};
-</script>
 {% end %}
